@@ -10,6 +10,8 @@ public class Person implements java.io.Serializable {
 
 	private java.lang.String name;
 
+	private java.lang.Long id;
+
 	public Person() {
 	}
 
@@ -21,8 +23,17 @@ public class Person implements java.io.Serializable {
 		this.name = name;
 	}
 
-	public Person(java.lang.String name) {
+	public java.lang.Long getId() {
+		return this.id;
+	}
+
+	public void setId(java.lang.Long id) {
+		this.id = id;
+	}
+
+	public Person(java.lang.String name, java.lang.Long id) {
 		this.name = name;
+		this.id = id;
 	}
 
 }
